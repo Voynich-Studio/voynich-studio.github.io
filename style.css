@@ -108,27 +108,11 @@ button { font: inherit; }
 .logo-mark {
   width: 44px;
   height: 44px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.28), rgba(255,255,255,.05)),
-    linear-gradient(135deg, var(--green), #1f7a35);
-  color: white;
-  box-shadow: 0 14px 30px rgba(76, 175, 80, .28);
-  position: relative;
-  overflow: hidden;
-}
-
-.logo-mark::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background: rgba(255,255,255,.22);
-  border-radius: 999px;
-  top: -6px;
-  right: -5px;
+  border-radius: 14px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 14px 30px rgba(76, 175, 80, .22);
+  background: #080b0c;
 }
 
 .nav-links {
