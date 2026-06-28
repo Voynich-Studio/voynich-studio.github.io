@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Voynich Studio — мобильные приложения</title>
-  <meta name="description" content="Voynich Studio разрабатывает современные мобильные приложения для здорового образа жизни, питания и повседневных задач.">
+  <meta name="description" content="Voynich Studio разрабатывает современные мобильные приложения для питания, здоровья и повседневных задач.">
+  <meta name="theme-color" content="#4CAF50">
   <link rel="canonical" href="https://voynich-studio.github.io/">
   <meta property="og:title" content="Voynich Studio — мобильные приложения">
-  <meta property="og:description" content="Voynich Studio разрабатывает современные мобильные приложения для здорового образа жизни, питания и повседневных задач.">
+  <meta property="og:description" content="Voynich Studio разрабатывает современные мобильные приложения для питания, здоровья и повседневных задач.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://voynich-studio.github.io/">
-  <meta name="theme-color" content="#4CAF50">
+  <meta property="og:site_name" content="Voynich Studio">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="style.css">
@@ -20,82 +22,114 @@
     "@type": "Organization",
     "name": "Voynich Studio",
     "url": "https://voynich-studio.github.io/",
-    "email": "voynichstudio@mail.ru"
+    "email": "voynichstudio@mail.ru",
+    "foundingLocation": "Россия"
   }
   </script>
+
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">VS</span>
+      <a class="logo" href="index.html" aria-label="Voynich Studio">
+        <span class="logo-mark">VS</span>
         <span>Voynich Studio</span>
       </a>
-      <div class="nav-links">
-        <a href="index.html#apps">Приложения</a>
-        <a href="kbju-basket.html">Корзина КБЖУ</a>
-        <a href="privacy-policy.html">Политика</a>
-        <a href="terms.html">Соглашение</a>
-        <a href="index.html#contacts">Контакты</a>
+      <div class="nav-links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="apps.html">Приложения</a>
+        <a href="about.html">О студии</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Поддержка</a>
       </div>
-      <button class="theme-btn" onclick="toggleTheme()" aria-label="Переключить тему">🌙 / ☀️</button>
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Переключить тему">🌙</button>
+        <button class="icon-btn mobile-menu-btn" onclick="toggleMenu()" aria-label="Открыть меню">☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu">
+      <a href="index.html">Главная</a>
+      <a href="apps.html">Приложения</a>
+      <a href="about.html">О студии</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Поддержка</a>
+      <a href="privacy-policy.html">Документы</a>
     </div>
   </nav>
 
-<header class="hero">
+<header class="hero" id="main">
   <div class="container hero-grid">
-    <div>
-      <div class="eyebrow fade-up">🌿 Независимая студия мобильных приложений</div>
-      <h1 class="fade-up delay-1">Приложения, которые помогают жить осознаннее.</h1>
-      <p class="lead fade-up delay-2">Voynich Studio создаёт простые и полезные мобильные продукты для питания, здоровья, привычек и повседневных задач.</p>
-      <div class="actions fade-up delay-2">
-        <a class="btn primary" href="kbju-basket.html">Смотреть приложение</a>
-        <a class="btn secondary" href="privacy-policy.html">Документы</a>
+    <div class="hero-copy">
+      <div class="badge reveal">🌿 Mobile products with privacy first</div>
+      <h1 class="reveal d1">Создаем полезные мобильные приложения.</h1>
+      <p class="lead reveal d2">Voynich Studio — независимая студия разработки. Мы делаем приложения для питания, здоровья и повседневных задач с акцентом на простоту, приватность и понятный дизайн.</p>
+      <div class="actions reveal d2">
+        <a class="btn primary" href="apps.html">Наши приложения</a>
+        <a class="btn secondary" href="about.html">О студии</a>
+      </div>
+      <div class="stats reveal d2">
+        <div class="stat"><strong>Offline</strong><span>приватность по умолчанию</span></div>
+        <div class="stat"><strong>1.0</strong><span>первый релиз продукта</span></div>
+        <div class="stat"><strong>18+</strong><span>аудитория приложения</span></div>
       </div>
     </div>
-    <div class="phone fade-up delay-2" aria-label="Превью приложения Корзина КБЖУ">
-      <div class="phone-screen">
-        <div class="app-card green">
-          <div>Ваша цель</div>
-          <h3>Похудение</h3>
-        </div>
-        <div class="app-card">
-          <div>Продуктов хватит</div>
-          <div class="big-number">5,4 дня</div>
-          <div style="color:#BDEFC0">Самый слабый показатель: углеводы</div>
-        </div>
-        <div class="macro-grid">
-          <div class="macro">🔥<br><strong>3110</strong><br>Ккал</div>
-          <div class="macro">🥩<br><strong>220</strong><br>Белки</div>
-          <div class="macro">🥑<br><strong>99</strong><br>Жиры</div>
-          <div class="macro">🍞<br><strong>334</strong><br>Углеводы</div>
-        </div>
+
+<div class="device-wrap reveal d2">
+  <div class="orbit"></div>
+  <div class="phone" aria-label="Мокап приложения Корзина КБЖУ">
+    <div class="phone-screen">
+      <div class="phone-top"></div>
+      <div class="app-card green">
+        <div>Ваша цель</div>
+        <h3>Похудение</h3>
+      </div>
+      <div class="app-card">
+        <div>Продуктов хватит</div>
+        <div class="big-number">5,4</div>
+        <div>дня · слабый показатель: углеводы</div>
+      </div>
+      <div class="phone-grid">
+        <div class="phone-macro">🔥<br><strong>3110</strong><br>Ккал</div>
+        <div class="phone-macro">🥩<br><strong>220</strong><br>Белки</div>
+        <div class="phone-macro">🥑<br><strong>99</strong><br>Жиры</div>
+        <div class="phone-macro">🍞<br><strong>334</strong><br>Углеводы</div>
+      </div>
+      <div class="app-card" style="margin-top:15px">
+        <strong>Рекомендации</strong><br>
+        Добавьте фрукты и крупы для баланса корзины.
       </div>
     </div>
   </div>
+</div>
+
+  </div>
 </header>
 
-<main>
-  <section class="section" id="apps">
+<main id="main">
+  <section class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Наши приложения</h2>
-        <p class="lead">Первый продукт студии — «Корзина КБЖУ», приложение для планирования продуктовой корзины под цели питания.</p>
+        <div class="section-kicker">Продукт</div>
+        <h2>Первое приложение студии — «Корзина КБЖУ»</h2>
+        <p class="lead">Планировщик продуктовой корзины под цели по калориям, белкам, жирам и углеводам.</p>
       </div>
-      <div class="app-showcase">
+      <div class="split">
         <div class="card">
           <div class="card-icon">🛒</div>
           <h3>Корзина КБЖУ</h3>
-          <p>Планируйте покупки продуктов с учетом калорий, белков, жиров и углеводов. Приложение работает офлайн и не требует регистрации.</p>
+          <p>Приложение помогает рассчитать КБЖУ, собрать список продуктов, понять на сколько дней хватит корзины и получить рекомендации по улучшению закупки.</p>
           <div class="actions">
-            <a class="btn primary" href="kbju-basket.html">Подробнее</a>
+            <a class="btn primary" href="kbju-basket.html">О приложении</a>
             <a class="btn secondary" href="#">Скоро в Google Play</a>
           </div>
         </div>
         <div class="feature-list">
-          <div class="feature-item"><span class="check">✓</span><span><strong>Полностью офлайн.</strong><br>Данные остаются на устройстве пользователя.</span></div>
-          <div class="feature-item"><span class="check">✓</span><span><strong>Без рекламы.</strong><br>Первая версия не содержит рекламных SDK и аналитики.</span></div>
-          <div class="feature-item"><span class="check">✓</span><span><strong>Светлая и тёмная тема.</strong><br>Интерфейс адаптирован для разных условий использования.</span></div>
+          <div class="feature"><span class="check">✓</span><div><strong>Без регистрации</strong><p>Пользователь сразу попадает в приложение и может настроить цель.</p></div></div>
+          <div class="feature"><span class="check">✓</span><div><strong>Данные на устройстве</strong><p>Текущая версия работает офлайн и не отправляет данные разработчику.</p></div></div>
+          <div class="feature"><span class="check">✓</span><div><strong>Главная ценность</strong><p>Приложение отвечает на вопрос: хватит ли продуктовой корзины под цель питания?</p></div></div>
         </div>
       </div>
     </div>
@@ -104,23 +138,13 @@
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Принципы Voynich Studio</h2>
+        <div class="section-kicker">Принципы</div>
+        <h2>Мы строим продукты вокруг пользы, а не лишних функций.</h2>
       </div>
       <div class="cards">
-        <div class="card"><div class="card-icon">⚡</div><h3>Простота</h3><p>Приложения должны быть понятны с первых секунд и не перегружать пользователя.</p></div>
-        <div class="card"><div class="card-icon">🔒</div><h3>Приватность</h3><p>Мы стремимся хранить данные локально и не использовать лишние разрешения.</p></div>
-        <div class="card"><div class="card-icon">🎯</div><h3>Польза</h3><p>Каждая функция должна отвечать на реальную задачу пользователя.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contacts">
-    <div class="container">
-      <div class="card">
-        <h2>Контакты</h2>
-        <p><strong>Разработчик:</strong> Voynich Studio</p>
-        <p><strong>Страна:</strong> Россия</p>
-        <p><strong>Email:</strong> <a href="mailto:voynichstudio@mail.ru">voynichstudio@mail.ru</a></p>
+        <div class="card"><div class="card-icon">⚡</div><h3>Простота</h3><p>Интерфейс должен быть понятен с первых секунд.</p></div>
+        <div class="card"><div class="card-icon">🔒</div><h3>Приватность</h3><p>Минимум данных, минимум разрешений, максимум контроля у пользователя.</p></div>
+        <div class="card"><div class="card-icon">📱</div><h3>Мобильность</h3><p>Дизайн сначала продумывается для смартфона, затем масштабируется на большие экраны.</p></div>
       </div>
     </div>
   </section>

@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Медицинский отказ от ответственности — Корзина КБЖУ</title>
-  <meta name="description" content="Медицинский отказ от ответственности для приложения Корзина КБЖУ.">
+  <meta name="description" content="Медицинский отказ от ответственности приложения Корзина КБЖУ.">
+  <meta name="theme-color" content="#4CAF50">
   <link rel="canonical" href="https://voynich-studio.github.io/medical-disclaimer.html">
   <meta property="og:title" content="Медицинский отказ от ответственности — Корзина КБЖУ">
-  <meta property="og:description" content="Медицинский отказ от ответственности для приложения Корзина КБЖУ.">
+  <meta property="og:description" content="Медицинский отказ от ответственности приложения Корзина КБЖУ.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://voynich-studio.github.io/medical-disclaimer.html">
-  <meta name="theme-color" content="#4CAF50">
+  <meta property="og:site_name" content="Voynich Studio">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="style.css">
@@ -20,52 +22,54 @@
     "@type": "Organization",
     "name": "Voynich Studio",
     "url": "https://voynich-studio.github.io/",
-    "email": "voynichstudio@mail.ru"
+    "email": "voynichstudio@mail.ru",
+    "foundingLocation": "Россия"
   }
   </script>
+
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">VS</span>
+      <a class="logo" href="index.html" aria-label="Voynich Studio">
+        <span class="logo-mark">VS</span>
         <span>Voynich Studio</span>
       </a>
-      <div class="nav-links">
-        <a href="index.html#apps">Приложения</a>
-        <a href="kbju-basket.html">Корзина КБЖУ</a>
-        <a href="privacy-policy.html">Политика</a>
-        <a href="terms.html">Соглашение</a>
-        <a href="index.html#contacts">Контакты</a>
+      <div class="nav-links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="apps.html">Приложения</a>
+        <a href="about.html">О студии</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Поддержка</a>
       </div>
-      <button class="theme-btn" onclick="toggleTheme()" aria-label="Переключить тему">🌙 / ☀️</button>
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Переключить тему">🌙</button>
+        <button class="icon-btn mobile-menu-btn" onclick="toggleMenu()" aria-label="Открыть меню">☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu">
+      <a href="index.html">Главная</a>
+      <a href="apps.html">Приложения</a>
+      <a href="about.html">О студии</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Поддержка</a>
+      <a href="privacy-policy.html">Документы</a>
     </div>
   </nav>
 
-<main class="legal-layout">
-  <article class="container legal-doc">
-    <h1>Медицинский отказ от ответственности</h1>
-    <p>Приложение «Корзина КБЖУ» не является медицинским изделием и не предназначено для диагностики, лечения, профилактики заболеваний или назначения диеты.</p>
-
-    <h2>1. Информационный характер</h2>
-    <p>Все расчёты калорий, белков, жиров и углеводов являются приблизительными и предоставляются только в информационных целях.</p>
-
-    <h2>2. Не заменяет специалиста</h2>
-    <p>Приложение не заменяет консультацию врача, диетолога, нутрициолога, тренера или другого квалифицированного специалиста.</p>
-
-    <h2>3. Индивидуальные особенности</h2>
-    <p>Потребности в питании могут отличаться в зависимости от состояния здоровья, возраста, пола, физической активности, заболеваний, беременности, лекарств и других факторов.</p>
-
-    <h2>4. Ответственность пользователя</h2>
-    <p>Пользователь самостоятельно принимает решения о питании, покупке продуктов и изменении рациона.</p>
-
-    <h2>5. Рекомендация</h2>
-    <p>Перед существенным изменением питания, особенно при наличии заболеваний, беременности, расстройств пищевого поведения или специальных медицинских состояний, рекомендуется проконсультироваться со специалистом.</p>
-
-    <h2>6. Контакты</h2>
-    <p>По вопросам можно обратиться: <a href="mailto:voynichstudio@mail.ru">voynichstudio@mail.ru</a>.</p>
-  </article>
-</main>
+<main id="main" class="legal-layout"><article class="container legal-doc">
+<h1>Медицинский отказ от ответственности</h1>
+<p>Приложение «Корзина КБЖУ» не является медицинским изделием и не предназначено для диагностики, лечения, профилактики заболеваний или назначения диеты.</p>
+<h2>1. Информационный характер</h2><p>Все расчёты калорий, белков, жиров и углеводов являются приблизительными и предоставляются только в информационных целях.</p>
+<h2>2. Не заменяет специалиста</h2><p>Приложение не заменяет консультацию врача, диетолога, нутрициолога, тренера или другого квалифицированного специалиста.</p>
+<h2>3. Индивидуальные особенности</h2><p>Потребности в питании могут отличаться в зависимости от состояния здоровья, возраста, пола, физической активности, заболеваний, беременности, лекарств и других факторов.</p>
+<h2>4. Ответственность пользователя</h2><p>Пользователь самостоятельно принимает решения о питании, покупке продуктов и изменении рациона.</p>
+<h2>5. Рекомендация</h2><p>Перед существенным изменением питания, особенно при наличии заболеваний, беременности, расстройств пищевого поведения или специальных медицинских состояний, рекомендуется проконсультироваться со специалистом.</p>
+<h2>6. Контакты</h2><p>По вопросам можно обратиться: <a href="mailto:voynichstudio@mail.ru">voynichstudio@mail.ru</a>.</p>
+</article></main>
 
   <footer class="footer">
     <div class="container footer-grid">
