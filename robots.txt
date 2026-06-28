@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://voynich-studio.github.io/sitemap.xml
